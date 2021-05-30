@@ -1,0 +1,11 @@
+# Aliases extracted from modules themselves.
+alias of:N*T*Carm,mali-470C* mali
+alias of:N*T*Carm,mali-470 mali
+alias of:N*T*Carm,mali-450C* mali
+alias of:N*T*Carm,mali-450 mali
+alias of:N*T*Carm,mali-400C* mali
+alias of:N*T*Carm,mali-400 mali
+alias of:N*T*Carm,mali-300C* mali
+alias of:N*T*Carm,mali-300 mali
+alias sdio:c*v024CdC821* rtl8821cs
+alias sdio:c*v024CdB821* rtl8821cs
