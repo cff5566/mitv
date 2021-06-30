@@ -1,0 +1,46 @@
+import /vendor/etc/init/hw/init.amlogic.usb.rc
+
+on early-init
+    loglevel 3
+
+    mount configfs configfs /sys/kernel/config
+    #mount usbfs none /proc/bus/usb
+
+on init
+    # ZRAM options
+    write /sys/block/zram0/comp_algorithm lz4
+    write /sys/block/zram0/max_comp_streams 4
+    write /proc/sys/vm/page-cluster 0
+    write /proc/sys/vm/swappiness 100
+    write /sys/kernel/mm/ksm/run 1
+
+on post-fs-data
+    insmod /vendor/lib/modules/mali.ko
+    insmod /vendor/lib/modules/cfg80211.ko
+    gethwmac
+
+on boot
+    setprop ro.radio.noril true
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor interactive
+    write /sys/class/freq_limit/limit 0
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_dflt_freq 2016000
+
+#HDMI IN
+    chmod 666 /sys/class/sii9233a/port
+    chmod 666 /sys/class/sii9233a/enable
+    chmod 666 /sys/module/tvin_vdin/parameters/max_buf_num
+
+    # chmod 0666 /dev/ge2d
+    chmod 666 /dev/cec
+    chmod 0666 /dev/opteearmtz00
+    chmod 0666 /dev/tee0
+
+# buttonslight status
+    chown system system /sys/class/switch_led/buttonslight
+    chmod 664 /sys/class/switch_led/buttonslight
+
+# emmc status
+    chmod 0444 /d/emmc/emmc:0001/ext_csd
+
+on property:vendor.sys.wkrenew=1
+    copy /vendor/package_config/config /sdcard/clear_mediashell

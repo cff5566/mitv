@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<items token="1497612014330">
+
+    <!-- sound output for old settings -->
+
+    <!-- sound output for new settings -->
+
+    <!-- sound digital output -->
+
+    <!-- 4K屏-->
+    <item key="4k_screen" value="YES" product="machuca,nino"/>
+
+
+
+    <!-- 添加低音炮，低音炮外观不同 -->
+
+    <!-- 添加麦克风，麦克风外观不同 -->
+
+    <!-- 添加小米家庭音响, 接口硬件不同 -->
+
+    <!-- 是否监听低音炮连接状态广播 -->
+
+    <!-- Dolby Test只保留EqDrc和Dts drc两个选项的特殊情况  -->
+
+    <!-- 低音炮是否支持线连  -->
+
+    <!-- atmos声音测试声道不同  -->
+
+    <!-- dolby是否支持virtual surround 和 voice enhance  -->
+
+    <!-- 是否使用wifi MAC -->
+
+    <!-- 是否显示系统更新 -->
+
+
+    <!-- HDMI 顺序转换  begin-->
+    <!-- HDMI 顺序转换  end-->
+
+    <!-- 设备出厂是否写入遥控器mac地址 -->
+    <!-- ATV里面是否显示图像制式菜单 -->
+
+    <!-- 是否显示Spdifin输入源 -->
+
+    <!-- 是否上传gamma值 -->
+
+    <!-- BoxProduct中声音界面显示的是Tv的SoundView -->
+
+    <!-- 设置首页只有6个格 -->
+
+    <!-- 盒子设置声音digitaloutput是否有auto选项 -->
+
+    <!-- nrdp_external_surround_sound_enabled value为产品platformid -->
+    <!--801(962sx 43寸 T27-I),802(962sx 32寸 T26-I)-->
+    <!--804(V26-N),805(V26A/V26I)，806(V27N)，807(V27I)，808(V30A),826(V77I)-->
+    <item key="nrdp_disable" value="YES" platformid="801,802,804,805,806,807,808,826"/>
+    <!---rc_type to property value Map-->
+    <item key="hw_rc_type" value="AR11" bluetooth_rc_type_prop_value="00"/>
+    <item key="hw_rc_type" value="AR14" bluetooth_rc_type_prop_value="0E"/>
+    <item key="hw_rc_type" value="AR15" bluetooth_rc_type_prop_value="0F"/>
+    <item key="hw_rc_type" value="AR15C" bluetooth_rc_type_prop_value="10"/>
+    <item key="hw_rc_type" value="AR17" bluetooth_rc_type_prop_value="11"/>
+    <item key="hw_rc_type" value="AR17C" bluetooth_rc_type_prop_value="12"/>
+    <item key="hw_rc_type" value="AR11C" bluetooth_rc_type_prop_value="13"/>
+    <item key="hw_rc_type" value="AR19" bluetooth_rc_type_prop_value="14"/>
+
+    <!-- 海外蓝牙遥控器型号是否可用 -->
+    <item key="hw_rc_type" value="AR15" product="machuca,volver"
+        settings_global="tv_settings_user_region=in,tv_settings_user_region=tw,tv_settings_user_region=kr" />
+    <item key="hw_rc_type" value="AR11" product="amelie,nino"/>
+    <item key="hw_rc_type" value="AR15C" product="croods,tarzan" settings_global="tv_settings_user_region=in,tv_settings_user_region=id"/>
+    <item key="hw_rc_type" value="AR14" product="croods,tarzan,machuca,volver" />
+
+    <item key="hbbtv_support" value="NO" region="in" othervalue="YES"/>
+
+    <!-- 背光单独分mode保存 -->
+    <item key="support_single_backlight" value="YES" platformid="824,825,827,829,836"/>
+    <!-- 显示MEMC -->
+    <item key="support_display_memc" value="YES" platformid="824,825,827,829,833,834,835,836"/>
+
+    <item key="hide_hdmi_enhanced_Mode" value="YES" product="machuca,volver"/>
+
+    <!-- 支持hbbtv的国家 -->
+    <item key="support_hbbtv_region" value="es,it,fr,de,pl,ru,vn,sg" product="machuca,volver,croods,tarzan"/>
+    <!-- 支持hbbtv的国家,不需要显示隐私协议(默认关闭) -->
+    <item key="support_hbbtv_without_privacy" value="ru,vn,th,my,sg" product="machuca,volver,croods,tarzan"/>
+
+    <!-- 支持Antenna -->
+    <item key="support_antenna_tuner" value="YES" />
+    <!-- 支持Cable -->
+    <item key="support_cable_tuner" value="YES" product="machuca,volver,amelie,nino" />
+    <item key="support_cable_tuner" value="YES" product="tarzan,croods" settings_global="!tv_settings_user_region=in$!tv_settings_user_region=id" />
+    <!-- 支持Satellite -->
+    <item key="support_satellite_tuner" value="YES" product="machuca,volver" />
+    <item key="support_satellite_tuner" value="YES" product="tarzan,croods" settings_global="!tv_settings_user_region=in$!tv_settings_user_region=id$!tv_settings_user_region=th$!tv_settings_user_region=vn" />
+    <!-- 仅支持atv -->
+    <item key="support_analog_only" value="YES" product="tarzan,croods" settings_global="tv_settings_user_region=id" />
+
+
+    <!-- 支持HDR10+ -->
+    <item key="support_hdr_10_plus" value="YES" platformid="827,829,833,834,835,836"/>
+    <item key="support_hdr_10_plus" value="YES" product="croods,tarzan"/>
+
+    <!-- 支持分离数据库的版本 -->
+    <item key="support_detach_database_version" value="YES" product="croods,tarzan"/>
+    <!-- 支持动态背光 -->
+    <item key="support_dynamic_backlight" value="YES" platformid="827"/>
+    <item key="support_dynamic_backlight" value="YES" property="vendor.mitv.ldimming=false"/>
+    <!-- 支持Local Dimming -->
+    <item key="support_local_dimming" value="YES" property="vendor.mitv.ldimming=true"/>
+    <!-- 是否支持杜比音效，目前海外都不支持杜比音效-->
+    <item key="dolby_effect_supported" value="NO"/>
+    <!-- 是否支持杜比解码-->
+    <item key="dolbyplus_effect_supported" value="YES"/>
+
+    <!-- tuner 是否不可用 -->
+    <item key="hw_no_tuner" value="YES" feature="mitv.hardware.no.tuner"/>
+    <item key="hw_no_tuner" value="YES" settings_global="tv_settings_user_region=kr"/>
+
+    <!-- 是否支持dolby 2.4 -->
+    <item key="support_dolby_audio_24" value="YES" property="vendor.mitv.doblyaudio24=enable" />
+    <!-- 是否支持spdif, 默认支持，6683项目32寸俄罗斯，西班牙不支持 -->
+    <item key="support_spdif" value="NO" platformid="820,823"/>
+    <item key="support_standby_light" value="YES" property="vendor.mitv.standbylight=true"/>
+    <item key="support_data_saver" value="YES" settings_global="tv_settings_user_region=in"/>
+    <item key="support_tv_lock" value="YES" settings_global="tv_settings_user_region=in,tv_settings_user_region=id"/>
+    <item key="support_langting_font" value="YES" settings_global="tv_settings_user_region=in,tv_settings_user_region=id"/>
+    <item key="support_match_smart_configuration" value="YES" settings_global="tv_settings_user_region=in,tv_settings_user_region=ina,tv_settings_user_region=sa"/>
+
+    <!-- 是否支持大区选择 -->
+    <item key="skip_zone_select" value="YES" product="amelie,nino,machuca,volver,croods,tarzan" region="in,ina,sa" />
+
+    <!-- 是否支持小米ntp服务器 -->
+    <item key="support_mi_ntp_server" value="YES" settings_global="tv_settings_user_region=in,tv_settings_user_region=np"/>
+
+    <!-- 小米ntp服务器地址 -->
+    <item key="mi_ntp_server_url" value="https://sys.tv.india.xiaomi.com/sysconfig/systime" settings_global="tv_settings_user_region=in"/>
+    <item key="mi_ntp_server_url" value="https://sg.tv.global.mi.com/sysconfig/systime" settings_global="tv_settings_user_region=np"/>
+
+    <!--各个国家(service region)不支持的系统预装应用 -->
+    <item key="country_unsupport_system_pre_install_app" value="com.xiaomi.mitv.manualhelp" settings_global="tv_settings_user_region=in"/>
+    <item key="country_unsupport_system_pre_install_app" value="co.sensara.tv.mitv,com.xiaomi.mitv.manualhelp" settings_global="tv_settings_user_region=ina"/>
+    <item key="country_unsupport_system_pre_install_app" value="com.xiaomi.mitv.handbook,co.sensara.tv.mitv,com.mitv.tvlock,com.google.android.apps.nbu.smartconnect.tv,com.mediatek.wwtv.mediaplayer,com.android.traceur" settings_global="tv_settings_user_region=eu"/>
+    <item key="country_unsupport_system_pre_install_app" value="com.xiaomi.mitv.handbook,co.sensara.tv.mitv,com.mitv.tvlock,com.google.android.apps.nbu.smartconnect.tv,com.mediatek.wwtv.mediaplayer,com.android.traceur" settings_global="tv_settings_user_region=it"/>
+    <item key="country_unsupport_system_pre_install_app" value="com.xiaomi.mitv.handbook,co.sensara.tv.mitv,com.mitv.tvlock,com.google.android.apps.nbu.smartconnect.tv,com.mediatek.wwtv.mediaplayer,com.android.traceur" settings_global="tv_settings_user_region=fr"/>
+    <item key="country_unsupport_system_pre_install_app" value="com.xiaomi.mitv.handbook,co.sensara.tv.mitv,com.mitv.tvlock,com.google.android.apps.nbu.smartconnect.tv,com.mediatek.wwtv.mediaplayer,com.android.traceur" settings_global="tv_settings_user_region=de"/>
+    <item key="country_unsupport_system_pre_install_app" value="com.xiaomi.mitv.handbook,co.sensara.tv.mitv,com.mitv.tvlock,com.google.android.apps.nbu.smartconnect.tv,com.mediatek.wwtv.mediaplayer,com.android.traceur" settings_global="tv_settings_user_region=pl"/>
+    <item key="country_unsupport_system_pre_install_app" value="com.xiaomi.mitv.handbook,co.sensara.tv.mitv,com.mitv.tvlock,com.google.android.apps.nbu.smartconnect.tv,com.mediatek.wwtv.mediaplayer,com.android.traceur" settings_global="tv_settings_user_region=by"/>
+
+    <!-- 标记当前项目是海外项目，所有海外项目都应该添加该字段，所有国内项目无须添加该字段，默认为NO-->
+    <item key="is_oversea_product" value="YES"/>
+</items>
